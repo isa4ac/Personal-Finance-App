@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var progress: CGFloat = 0
+    @State var name = String()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        // conditional logic if user has already finished setup
+        SetupView()
     }
 }
 

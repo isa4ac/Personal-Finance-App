@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in NumberOnlyViewModifier.body(content:):NumberOnlyViewModifier.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "getSymbol()">
+            </PersistentString>
+            <PersistentString
+               value = "filtered.filter({&#10;                        return $0 != getSymbol() &amp;&amp; $0 != Character(decimalSeparator)})">
+            </PersistentString>
+            <PersistentString
+               value = "filtered">
+            </PersistentString>
+            <PersistentString
+               value = "filtered.filter({$0 == getSymbol()})">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SetupView.ViewModel.addAccount():SetupView+ViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "newAccountBalance.filter({ &quot;0123456789.&quot;.contains($0) })">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

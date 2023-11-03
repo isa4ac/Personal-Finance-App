@@ -7,18 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1106A01E2AF1B42E00B5F7DB /* UserEntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106A01D2AF1B42E00B5F7DB /* UserEntryRow.swift */; };
 		111ADDEB2AEEDE41001D04B4 /* Personal_Finance_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111ADDEA2AEEDE41001D04B4 /* Personal_Finance_AppApp.swift */; };
 		111ADDED2AEEDE41001D04B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111ADDEC2AEEDE41001D04B4 /* ContentView.swift */; };
 		111ADDEF2AEEDE43001D04B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111ADDEE2AEEDE43001D04B4 /* Assets.xcassets */; };
 		111ADDF22AEEDE43001D04B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111ADDF12AEEDE43001D04B4 /* Preview Assets.xcassets */; };
+		115C4F5D2AF18CBC000B9108 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C4F5C2AF18CBC000B9108 /* SplashScreenView.swift */; };
+		115C4F612AF18DD3000B9108 /* MainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C4F602AF18DD3000B9108 /* MainViewBuilder.swift */; };
+		11EA1C5C2AF22F2E00BD45F6 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C5B2AF22F2E00BD45F6 /* AccountModel.swift */; };
+		11EA1C5F2AF2332700BD45F6 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C5E2AF2332700BD45F6 /* SetupView.swift */; };
+		11EA1C612AF2335D00BD45F6 /* SetupView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C602AF2335D00BD45F6 /* SetupView+ViewModel.swift */; };
+		11EA1C642AF2350100BD45F6 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C632AF2350100BD45F6 /* MainButton.swift */; };
+		11EA1C662AF2396800BD45F6 /* AccountRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C652AF2396800BD45F6 /* AccountRow.swift */; };
+		11EA1C692AF2E40500BD45F6 /* MainUDMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C682AF2E40500BD45F6 /* MainUDMethods.swift */; };
+		11EA1C6C2AF2E57B00BD45F6 /* AccountEntryModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C6B2AF2E57B00BD45F6 /* AccountEntryModal.swift */; };
+		11EA1C6E2AF36BC900BD45F6 /* NumberOnlyViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C6D2AF36BC900BD45F6 /* NumberOnlyViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1106A01D2AF1B42E00B5F7DB /* UserEntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntryRow.swift; sourceTree = "<group>"; };
 		111ADDE72AEEDE41001D04B4 /* Personal Finance App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Finance App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		111ADDEA2AEEDE41001D04B4 /* Personal_Finance_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personal_Finance_AppApp.swift; sourceTree = "<group>"; };
 		111ADDEC2AEEDE41001D04B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		111ADDEE2AEEDE43001D04B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		111ADDF12AEEDE43001D04B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		115C4F5C2AF18CBC000B9108 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		115C4F602AF18DD3000B9108 /* MainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewBuilder.swift; sourceTree = "<group>"; };
+		11EA1C5B2AF22F2E00BD45F6 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		11EA1C5E2AF2332700BD45F6 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		11EA1C602AF2335D00BD45F6 /* SetupView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SetupView+ViewModel.swift"; sourceTree = "<group>"; };
+		11EA1C632AF2350100BD45F6 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		11EA1C652AF2396800BD45F6 /* AccountRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRow.swift; sourceTree = "<group>"; };
+		11EA1C682AF2E40500BD45F6 /* MainUDMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUDMethods.swift; sourceTree = "<group>"; };
+		11EA1C6B2AF2E57B00BD45F6 /* AccountEntryModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountEntryModal.swift; sourceTree = "<group>"; };
+		11EA1C6D2AF36BC900BD45F6 /* NumberOnlyViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOnlyViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1106A01C2AF1B41E00B5F7DB /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				1106A01D2AF1B42E00B5F7DB /* UserEntryRow.swift */,
+				11EA1C652AF2396800BD45F6 /* AccountRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
 		111ADDDE2AEEDE41001D04B4 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +82,9 @@
 		111ADDE92AEEDE41001D04B4 /* Personal Finance App */ = {
 			isa = PBXGroup;
 			children = (
+				11EA1C5D2AF232BF00BD45F6 /* Setup Views */,
+				11EA1C592AF22F0E00BD45F6 /* Models */,
+				115C4F5F2AF18DB8000B9108 /* Assets */,
 				111ADDEA2AEEDE41001D04B4 /* Personal_Finance_AppApp.swift */,
 				111ADDEC2AEEDE41001D04B4 /* ContentView.swift */,
 				111ADDEE2AEEDE43001D04B4 /* Assets.xcassets */,
@@ -65,6 +99,61 @@
 				111ADDF12AEEDE43001D04B4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		115C4F5F2AF18DB8000B9108 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				11EA1C672AF2E3BB00BD45F6 /* UserDefault Methods */,
+				11EA1C622AF234EF00BD45F6 /* Buttons */,
+				1106A01C2AF1B41E00B5F7DB /* Rows */,
+				115C4F5C2AF18CBC000B9108 /* SplashScreenView.swift */,
+				115C4F602AF18DD3000B9108 /* MainViewBuilder.swift */,
+				11EA1C6D2AF36BC900BD45F6 /* NumberOnlyViewModifier.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		11EA1C592AF22F0E00BD45F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11EA1C5B2AF22F2E00BD45F6 /* AccountModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		11EA1C5D2AF232BF00BD45F6 /* Setup Views */ = {
+			isa = PBXGroup;
+			children = (
+				11EA1C6A2AF2E55700BD45F6 /* Modal Entries */,
+				11EA1C5E2AF2332700BD45F6 /* SetupView.swift */,
+				11EA1C602AF2335D00BD45F6 /* SetupView+ViewModel.swift */,
+			);
+			path = "Setup Views";
+			sourceTree = "<group>";
+		};
+		11EA1C622AF234EF00BD45F6 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				11EA1C632AF2350100BD45F6 /* MainButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		11EA1C672AF2E3BB00BD45F6 /* UserDefault Methods */ = {
+			isa = PBXGroup;
+			children = (
+				11EA1C682AF2E40500BD45F6 /* MainUDMethods.swift */,
+			);
+			path = "UserDefault Methods";
+			sourceTree = "<group>";
+		};
+		11EA1C6A2AF2E55700BD45F6 /* Modal Entries */ = {
+			isa = PBXGroup;
+			children = (
+				11EA1C6B2AF2E57B00BD45F6 /* AccountEntryModal.swift */,
+			);
+			path = "Modal Entries";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +226,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115C4F5D2AF18CBC000B9108 /* SplashScreenView.swift in Sources */,
+				11EA1C5C2AF22F2E00BD45F6 /* AccountModel.swift in Sources */,
+				11EA1C6C2AF2E57B00BD45F6 /* AccountEntryModal.swift in Sources */,
+				11EA1C6E2AF36BC900BD45F6 /* NumberOnlyViewModifier.swift in Sources */,
+				11EA1C662AF2396800BD45F6 /* AccountRow.swift in Sources */,
+				11EA1C642AF2350100BD45F6 /* MainButton.swift in Sources */,
 				111ADDED2AEEDE41001D04B4 /* ContentView.swift in Sources */,
+				11EA1C5F2AF2332700BD45F6 /* SetupView.swift in Sources */,
 				111ADDEB2AEEDE41001D04B4 /* Personal_Finance_AppApp.swift in Sources */,
+				11EA1C692AF2E40500BD45F6 /* MainUDMethods.swift in Sources */,
+				115C4F612AF18DD3000B9108 /* MainViewBuilder.swift in Sources */,
+				1106A01E2AF1B42E00B5F7DB /* UserEntryRow.swift in Sources */,
+				11EA1C612AF2335D00BD45F6 /* SetupView+ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +375,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +405,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
