@@ -9,6 +9,7 @@ import Foundation
 
 struct AccountModel: Codable {
     var id: Int
+    var creatDate: Date?
     var name: String?
     var type: AccountType?
     var balance: Double?

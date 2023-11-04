@@ -26,6 +26,20 @@ extension SetupView {
             }
         }
         
+        func saveAccounts() {
+            let userDefaults = UserDefaults.standard
+            do {
+                try userDefaults.setObject(accounts, forKey: "accounts")
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        
+        func deleteAccount(at offsets: IndexSet) {
+            accounts.remove(atOffsets: offsets)
+            saveAccounts()
+        }
+        
         func addAccount() {
             let lastAccountId = accounts.last?.id ?? 0
             var newAccount = AccountModel(id: lastAccountId + 1)
@@ -36,14 +50,12 @@ extension SetupView {
             let formattedInterest = Double(newAccountInterest.filter({ "0123456789.".contains($0) }))
             let roundedInterest = round((formattedInterest ?? 0)*100)/100
             newAccount.interestRate = (roundedInterest/100) + 1
+            newAccount.creatDate = Date()
             accounts.append(newAccount)
             
-            let userDefaults = UserDefaults.standard
-            do {
-                try userDefaults.setObject(accounts, forKey: "accounts")
-            } catch {
-                print(error.localizedDescription)
-            }
+            saveAccounts()
+            
+            print(accounts)
             
             newAccountName = String()
             newAccountType = AccountType.Checking

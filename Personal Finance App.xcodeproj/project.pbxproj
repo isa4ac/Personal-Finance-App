@@ -14,6 +14,8 @@
 		111ADDF22AEEDE43001D04B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111ADDF12AEEDE43001D04B4 /* Preview Assets.xcassets */; };
 		115C4F5D2AF18CBC000B9108 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C4F5C2AF18CBC000B9108 /* SplashScreenView.swift */; };
 		115C4F612AF18DD3000B9108 /* MainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C4F602AF18DD3000B9108 /* MainViewBuilder.swift */; };
+		1165C0392AF5E76900F6C641 /* AccountEntryModal+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165C0382AF5E76900F6C641 /* AccountEntryModal+ViewModel.swift */; };
+		1165C03B2AF6A6FC00F6C641 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165C03A2AF6A6FC00F6C641 /* TransactionModel.swift */; };
 		11EA1C5C2AF22F2E00BD45F6 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C5B2AF22F2E00BD45F6 /* AccountModel.swift */; };
 		11EA1C5F2AF2332700BD45F6 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C5E2AF2332700BD45F6 /* SetupView.swift */; };
 		11EA1C612AF2335D00BD45F6 /* SetupView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C602AF2335D00BD45F6 /* SetupView+ViewModel.swift */; };
@@ -33,6 +35,8 @@
 		111ADDF12AEEDE43001D04B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		115C4F5C2AF18CBC000B9108 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		115C4F602AF18DD3000B9108 /* MainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewBuilder.swift; sourceTree = "<group>"; };
+		1165C0382AF5E76900F6C641 /* AccountEntryModal+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountEntryModal+ViewModel.swift"; sourceTree = "<group>"; };
+		1165C03A2AF6A6FC00F6C641 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		11EA1C5B2AF22F2E00BD45F6 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		11EA1C5E2AF2332700BD45F6 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		11EA1C602AF2335D00BD45F6 /* SetupView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SetupView+ViewModel.swift"; sourceTree = "<group>"; };
@@ -114,10 +118,20 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		1165C0372AF5E74900F6C641 /* AccountEntryModal */ = {
+			isa = PBXGroup;
+			children = (
+				11EA1C6B2AF2E57B00BD45F6 /* AccountEntryModal.swift */,
+				1165C0382AF5E76900F6C641 /* AccountEntryModal+ViewModel.swift */,
+			);
+			path = AccountEntryModal;
+			sourceTree = "<group>";
+		};
 		11EA1C592AF22F0E00BD45F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				11EA1C5B2AF22F2E00BD45F6 /* AccountModel.swift */,
+				1165C03A2AF6A6FC00F6C641 /* TransactionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,7 +165,7 @@
 		11EA1C6A2AF2E55700BD45F6 /* Modal Entries */ = {
 			isa = PBXGroup;
 			children = (
-				11EA1C6B2AF2E57B00BD45F6 /* AccountEntryModal.swift */,
+				1165C0372AF5E74900F6C641 /* AccountEntryModal */,
 			);
 			path = "Modal Entries";
 			sourceTree = "<group>";
@@ -227,12 +241,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				115C4F5D2AF18CBC000B9108 /* SplashScreenView.swift in Sources */,
+				1165C0392AF5E76900F6C641 /* AccountEntryModal+ViewModel.swift in Sources */,
 				11EA1C5C2AF22F2E00BD45F6 /* AccountModel.swift in Sources */,
 				11EA1C6C2AF2E57B00BD45F6 /* AccountEntryModal.swift in Sources */,
 				11EA1C6E2AF36BC900BD45F6 /* NumberOnlyViewModifier.swift in Sources */,
 				11EA1C662AF2396800BD45F6 /* AccountRow.swift in Sources */,
 				11EA1C642AF2350100BD45F6 /* MainButton.swift in Sources */,
 				111ADDED2AEEDE41001D04B4 /* ContentView.swift in Sources */,
+				1165C03B2AF6A6FC00F6C641 /* TransactionModel.swift in Sources */,
 				11EA1C5F2AF2332700BD45F6 /* SetupView.swift in Sources */,
 				111ADDEB2AEEDE41001D04B4 /* Personal_Finance_AppApp.swift in Sources */,
 				11EA1C692AF2E40500BD45F6 /* MainUDMethods.swift in Sources */,

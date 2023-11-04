@@ -23,7 +23,7 @@ struct MainButton: View {
             }
             Spacer()
         }
-        .padding()
+//        .padding()
         .background(Color(.white))
     }
 }

@@ -14,9 +14,15 @@ struct UserEntryRow: View {
     @Binding var entry: String
     var previewText = ""
     var format = BaseFormat.string
+    var icon = String()
+    var iconColor = Color(.red)
     
     var body: some View {
         HStack(alignment: .center) {
+            if icon != String() {
+                Image(systemName: icon)
+                    .foregroundColor(iconColor)
+            }
             Text(label)
                 .bold(labelBold)
             Spacer()
