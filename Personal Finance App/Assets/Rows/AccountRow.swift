@@ -10,7 +10,7 @@ import SwiftUI
 struct AccountRow: View {
     var account: AccountModel
     var body: some View {
-        HStack {
+        HStack(alignment: .center) {
             Text(account.name ?? "")
             Spacer()
             VStack(alignment: .trailing) {
@@ -33,7 +33,6 @@ struct AccountRow: View {
                 }
             }
         }
-        .background(Color(.white))
     }
     func getSymbol() -> String {
         let locale = Locale.current

@@ -42,8 +42,6 @@ struct UserEntryRow: View {
                     .multilineTextAlignment(.trailing)
             }
         }
-//        .padding(.horizontal)
-//        .background(Color)
     }
     
     func getCurrencyFormat() -> Formatter {

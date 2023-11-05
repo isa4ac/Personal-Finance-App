@@ -16,6 +16,9 @@
 		115C4F612AF18DD3000B9108 /* MainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C4F602AF18DD3000B9108 /* MainViewBuilder.swift */; };
 		1165C0392AF5E76900F6C641 /* AccountEntryModal+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165C0382AF5E76900F6C641 /* AccountEntryModal+ViewModel.swift */; };
 		1165C03B2AF6A6FC00F6C641 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165C03A2AF6A6FC00F6C641 /* TransactionModel.swift */; };
+		1165C03E2AF6AC5500F6C641 /* AccountList+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165C03D2AF6AC5500F6C641 /* AccountList+Button.swift */; };
+		1165C0402AF728EA00F6C641 /* ModalViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165C03F2AF728EA00F6C641 /* ModalViewBuilder.swift */; };
+		1165C0432AF8037A00F6C641 /* ExpenseList+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165C0422AF8037A00F6C641 /* ExpenseList+Button.swift */; };
 		11EA1C5C2AF22F2E00BD45F6 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C5B2AF22F2E00BD45F6 /* AccountModel.swift */; };
 		11EA1C5F2AF2332700BD45F6 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C5E2AF2332700BD45F6 /* SetupView.swift */; };
 		11EA1C612AF2335D00BD45F6 /* SetupView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA1C602AF2335D00BD45F6 /* SetupView+ViewModel.swift */; };
@@ -37,6 +40,9 @@
 		115C4F602AF18DD3000B9108 /* MainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewBuilder.swift; sourceTree = "<group>"; };
 		1165C0382AF5E76900F6C641 /* AccountEntryModal+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountEntryModal+ViewModel.swift"; sourceTree = "<group>"; };
 		1165C03A2AF6A6FC00F6C641 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		1165C03D2AF6AC5500F6C641 /* AccountList+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountList+Button.swift"; sourceTree = "<group>"; };
+		1165C03F2AF728EA00F6C641 /* ModalViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewBuilder.swift; sourceTree = "<group>"; };
+		1165C0422AF8037A00F6C641 /* ExpenseList+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpenseList+Button.swift"; sourceTree = "<group>"; };
 		11EA1C5B2AF22F2E00BD45F6 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		11EA1C5E2AF2332700BD45F6 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		11EA1C602AF2335D00BD45F6 /* SetupView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SetupView+ViewModel.swift"; sourceTree = "<group>"; };
@@ -108,12 +114,14 @@
 		115C4F5F2AF18DB8000B9108 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1165C0412AF72CF700F6C641 /* ViewBuilder */,
 				11EA1C672AF2E3BB00BD45F6 /* UserDefault Methods */,
 				11EA1C622AF234EF00BD45F6 /* Buttons */,
 				1106A01C2AF1B41E00B5F7DB /* Rows */,
 				115C4F5C2AF18CBC000B9108 /* SplashScreenView.swift */,
 				115C4F602AF18DD3000B9108 /* MainViewBuilder.swift */,
 				11EA1C6D2AF36BC900BD45F6 /* NumberOnlyViewModifier.swift */,
+				1165C03F2AF728EA00F6C641 /* ModalViewBuilder.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -125,6 +133,22 @@
 				1165C0382AF5E76900F6C641 /* AccountEntryModal+ViewModel.swift */,
 			);
 			path = AccountEntryModal;
+			sourceTree = "<group>";
+		};
+		1165C03C2AF6ABF100F6C641 /* Setup+SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				1165C03D2AF6AC5500F6C641 /* AccountList+Button.swift */,
+				1165C0422AF8037A00F6C641 /* ExpenseList+Button.swift */,
+			);
+			path = "Setup+SubViews";
+			sourceTree = "<group>";
+		};
+		1165C0412AF72CF700F6C641 /* ViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewBuilder;
 			sourceTree = "<group>";
 		};
 		11EA1C592AF22F0E00BD45F6 /* Models */ = {
@@ -139,6 +163,7 @@
 		11EA1C5D2AF232BF00BD45F6 /* Setup Views */ = {
 			isa = PBXGroup;
 			children = (
+				1165C03C2AF6ABF100F6C641 /* Setup+SubViews */,
 				11EA1C6A2AF2E55700BD45F6 /* Modal Entries */,
 				11EA1C5E2AF2332700BD45F6 /* SetupView.swift */,
 				11EA1C602AF2335D00BD45F6 /* SetupView+ViewModel.swift */,
@@ -243,8 +268,11 @@
 				115C4F5D2AF18CBC000B9108 /* SplashScreenView.swift in Sources */,
 				1165C0392AF5E76900F6C641 /* AccountEntryModal+ViewModel.swift in Sources */,
 				11EA1C5C2AF22F2E00BD45F6 /* AccountModel.swift in Sources */,
+				1165C03E2AF6AC5500F6C641 /* AccountList+Button.swift in Sources */,
 				11EA1C6C2AF2E57B00BD45F6 /* AccountEntryModal.swift in Sources */,
 				11EA1C6E2AF36BC900BD45F6 /* NumberOnlyViewModifier.swift in Sources */,
+				1165C0432AF8037A00F6C641 /* ExpenseList+Button.swift in Sources */,
+				1165C0402AF728EA00F6C641 /* ModalViewBuilder.swift in Sources */,
 				11EA1C662AF2396800BD45F6 /* AccountRow.swift in Sources */,
 				11EA1C642AF2350100BD45F6 /* MainButton.swift in Sources */,
 				111ADDED2AEEDE41001D04B4 /* ContentView.swift in Sources */,

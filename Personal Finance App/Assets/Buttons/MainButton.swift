@@ -24,7 +24,7 @@ struct MainButton: View {
             Spacer()
         }
 //        .padding()
-        .background(Color(.white))
+//        .background(Color(.white))
     }
 }
 

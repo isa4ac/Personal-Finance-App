@@ -17,17 +17,22 @@ struct AccountEntryModal: View {
     @FocusState private var accountNameFocus: Bool
     var onSubmit: () -> ()
     
-    let invalidGradient = Gradient(colors: [.white, .white, .red])
-    let validGradient = Gradient(colors: [.white, .white])
-    
     var body: some View {
-        NavigationView {
-            List {
+        ModalViewBuilder(size: viewModel.getSize(accountType: type), content: {
+            Group {
+                HStack {
+                    Spacer()
+                    Image(systemName: "xmark")
+                        .onTapGesture {
+                            isOpen = false
+                        }
+                }
+                .listRowSeparator(.hidden)
                 UserEntryRow(label: "Account Name",
                              entry: $name,
                              previewText: "Chase",
                              icon: viewModel.nameInvalid ? "exclamationmark" : String())
-                    .focused($accountNameFocus)
+                .focused($accountNameFocus)
                 HStack {
                     Picker("Account Type", selection: $type) {
                         ForEach(AccountType.allCases) { option in
@@ -41,7 +46,7 @@ struct AccountEntryModal: View {
                              format: .currency,
                              icon: viewModel.balanceInvalid ? "exclamationmark" : String())
                 if type == .Loan || type == .Savings { // TO-DO add interest for credit
-                    UserEntryRow(label: "Interest Rate",
+                    UserEntryRow(label: "Interest (APR)",
                                  entry: $interest,
                                  previewText: "0.00",
                                  format: .percent,
@@ -49,28 +54,19 @@ struct AccountEntryModal: View {
                 }
                 MainButton(text: "Add Account", action: {
                     // validation logic here
-                    if viewModel.entriesValid(name, balance, interest, checkInterest:
-                                              type == .Loan || type == .Savings) {
+                    if viewModel.entriesValid(name, balance, interest, checkInterest: type == .Loan || type == .Savings) {
                         // run onsubmit logic
                         onSubmit()
                         // close
                         isOpen = false
                     }
                 })
+                .listRowSeparator(.hidden)
             }
-            .onAppear {
-                accountNameFocus = true
-            }
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        isOpen = false
-                    } label: {
-                        Text("Cancel")
-                    }
-                }
-            }
-            .navigationTitle("New Account")
+            .listRowBackground(Color.clear)
+        })
+        .onAppear {
+            accountNameFocus = true
         }
     }
 }
